@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Создаем пустой массив и добавляем в него числа
+      let numbers = [];
+      for (let i = -10; i <= 10; i++) {
+        numbers.push(i);
+      }
+      console.log(numbers);
+
+      //Удаляем все отрицательные числа из массива
+      for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] < 0) {
+          numbers.shift(i);
+          i--;
+        }
+      }
+      console.log(numbers);
+
+      //Возводим каждое число в квадрат
+      for (let i = 0; i < numbers.length; i++) {
+        numbers[i] = numbers[i] * numbers[i];
+      }
+      console.log(numbers);
+
+      //Сортировка чисел в порядке убывания
+      for (let i = 0; i > numbers.length; i++) {
+        if (numbers[i] > i) {
+          numbers = numbers[i];
+        }
+      }
+      console.log(numbers);
+
+      /*Вам необходимо выполнить следующие операции над массивом чисел:
+      1.Создайте пустой массив с именем numbers
+      2.Заполните массив numbers целыми числами от -10 до 10 (включительно) с помощью цикла.
+
+      Используя циклы, выполните следующие операции над массивом numbers:
+      1.Удалите все отрицательные числа из массива
+      2.Возведите каждое число в квадрат
+      3.Отсортируйте числа в порядке убывания
+      4.Выведите полученный массив numbers в консоль*/
+    </script>
+  </body>
+</html>
